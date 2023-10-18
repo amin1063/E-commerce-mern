@@ -8,7 +8,7 @@ import cors from 'cors';
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoute.js";
 import path, { dirname } from "path";
-import {fileURLToPath} from "url";
+import {fileURLToPath} from 'url';
 
 
 // Configure environment variables
