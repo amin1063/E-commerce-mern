@@ -8,6 +8,7 @@ import cors from 'cors';
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoute.js";
 import path, { dirname } from "path";
+import {fileURLToPath} from "url";
 
 
 // Configure environment variables
@@ -15,6 +16,11 @@ dotenv.config();
 
 // Database Config
 connectDB();
+
+// es module fix
+
+const __filename = fileURLtoPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Create an Express app
 const app = express();
