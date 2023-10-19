@@ -1,6 +1,7 @@
 {
   "name": "restaurant-web",
   "version": "1.0.0",
+    "type": "module",
   "description": "Restaurant Rest api",
   "main": "server.js",
   "scripts": {
@@ -9,7 +10,7 @@
     "client": "npm start --prefix ./client",
     "dev": "concurrently \"npm run start\" \"npm run client\""
   },
-  "type": "module",
+
   "keywords": [],
   "author": "Amin",
   "license": "ISC",
